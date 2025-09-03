@@ -1,0 +1,56 @@
+[
+   {
+      "email": "novaconta@gmail.com",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "name": "Felipe",
+      "birth": "30/04/2002"
+   },
+   {
+      "email": "teste@mail.com",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "name": "Fdsapdkas",
+      "birth": "30/04/2002"
+   },
+   {
+      "email": "abcde@gmail.com",
+      "password": "bef57ec7f53a6d40beb640a780a639c83bc29ac8a9816f1fc6c5c6dcd93c4721",
+      "name": "eofkewofew",
+      "birth": "20/05/2000"
+   },
+   {
+      "email": "teste123@gmail.com",
+      "password": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
+      "name": "Samuel Dick",
+      "birth": "18/07/1988"
+   },
+   {
+      "email": "vivivi@gmail.com",
+      "password": "5037d56dcf51665084c9d73e73c151a4df10913c582b24117a338948e31451cc",
+      "name": "vivivi",
+      "birth": "17/12/2013"
+   },
+   {
+      "email": "email@teste.com",
+      "password": "03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4",
+      "name": "felipe",
+      "birth": "30/04/2002"
+   },
+   {
+      "email": "vivivi2@gmail.com",
+      "password": "5037d56dcf51665084c9d73e73c151a4df10913c582b24117a338948e31451cc",
+      "name": "vivivi",
+      "birth": "17/12/2013"
+   },
+   {
+      "email": "vivivi3@gmail.com.br",
+      "password": "5037d56dcf51665084c9d73e73c151a4df10913c582b24117a338948e31451cc",
+      "name": "vivivi",
+      "birth": "13/12/1902"
+   },
+   {
+      "email": "vivi.vi@gmail.com",
+      "password": "5037d56dcf51665084c9d73e73c151a4df10913c582b24117a338948e31451cc",
+      "name": "vi",
+      "birth": "12/12/2012"
+   }
+]
