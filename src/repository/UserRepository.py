@@ -5,9 +5,11 @@ from models.User import User
 from models.Birth import Birth
 
 import json
+import os
 
 class UserRepository:
-    JSONPATH: str = "json/users.json"
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    JSONPATH: str = os.path.join(BASE_DIR, '..', '..', 'json', 'users.json')
 
     def users(self) -> list[list]:
         user_list: list[list] = []
