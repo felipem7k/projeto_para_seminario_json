@@ -12,6 +12,9 @@ class Birth:
     def valid_date(self, data: str) -> datetime|None:
         try:
             date_valid = datetime.strptime(data, '%d/%m/%Y')
+            today = datetime.today()
+            if date_valid.year > today.year:
+                raise ValueError()
             return date_valid
         except ValueError:
             print("🔴 Data de nascimento inválida. Siga o formato (dd/mm/aaaa)")
