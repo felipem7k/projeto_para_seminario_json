@@ -3,11 +3,7 @@ import math
 
 class Birth:
     def __init__(self, birth_date: str):
-        birth_at: datetime|None = self.valid_date(birth_date)
-        if birth_at is None:
-            raise Exception("Data inválida")
-
-        self.date = birth_at
+        self.date = datetime.strptime(birth_date, '%d/%m/%Y')
 
     def valid_date(self, data: str) -> datetime|None:
         try:
