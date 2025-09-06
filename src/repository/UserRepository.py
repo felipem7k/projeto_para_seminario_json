@@ -1,4 +1,3 @@
-from inspect import _void
 from models.Password import Password
 from models.Credentials import Credentials
 from models.PersonalData import PersonalData
@@ -18,7 +17,7 @@ class UserRepository:
             user_list = json.load(json_file) or []
         return user_list
 
-    def save(self, user_list: list[list]) -> _void:
+    def save(self, user_list: list[list]):
         with open(self.JSONPATH, "w") as json_file:
             json.dump(user_list, json_file, indent=3)
 
