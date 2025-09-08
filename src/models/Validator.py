@@ -3,7 +3,7 @@ import re
 
 class Validator:
     @staticmethod
-    def password(password: str):
+    def password(password: str) -> bool:
         if len(password) < 5:
             return False
         return True

@@ -21,7 +21,7 @@ class UserRepository:
         with open(self.JSONPATH, "w") as json_file:
             json.dump(user_list, json_file, indent=3)
 
-    def create_user(self, email: str, password_input: str, name: str, birth_input: str):
+    def create_user(self, email: str, password_input: str, name: str, birth_input: str) -> User|None:
         user_list = self.users()
 
         if self.get_user_by_email(email) is not None:
@@ -44,7 +44,7 @@ class UserRepository:
 
         return user
     
-    def get_user_by_email(self, email) -> User:
+    def get_user_by_email(self, email) -> User|None:
         user_list = self.users()
         for user_data in user_list:
             if user_data["email"] == email:

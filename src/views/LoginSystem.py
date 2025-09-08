@@ -1,4 +1,5 @@
 from controllers.UserController import UserController
+from models.User import User
 
 class LoginSystem:
     def __init__(self):
@@ -15,7 +16,7 @@ class LoginSystem:
             print(option)
         print("=" * 24)
     
-    def create_account(self):
+    def create_account(self) -> User|None:
         print("\n--- Criação de Conta ---")
         try:
             account = self.user_controller.account_creation()
@@ -29,7 +30,7 @@ class LoginSystem:
             print(f"✗ Erro ao criar conta. {e}")
             return None
     
-    def login_account(self):
+    def login_account(self) -> User|None:
         print("\n--- Login ---")
         try:
             account = self.user_controller.login()
@@ -43,7 +44,7 @@ class LoginSystem:
             print(f"✗ Erro ao fazer login: {e}")
             return None
     
-    def get_user_choice(self):
+    def get_user_choice(self) -> str|None:
         try:
             choice = input("\nEscolha uma opção (1-3): ").strip()
             return choice
@@ -53,7 +54,7 @@ class LoginSystem:
         except Exception:
             return None
     
-    def handle_user_choice(self, choice):
+    def handle_user_choice(self, choice) -> str|None:
         if choice == '1':
             return self.create_account()
         elif choice == '2':
@@ -65,7 +66,7 @@ class LoginSystem:
             print("✗ Opção inválida. Escolha uma opção entre 1 e 3.")
             return None
     
-    def run(self):
+    def run(self) -> User|None:
         account = None
         max_attempts = 5
         attempts = 0
